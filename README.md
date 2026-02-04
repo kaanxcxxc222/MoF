@@ -462,7 +462,7 @@ Compared to dense models with equivalent expressiveness, FM-MoE achieves:
 If you use this implementation in your research, please cite:
 
 ```bibtex
-@software{gomez2024fmmoe,
+@software{gomez2026fmmoe,
   author       = {Gomez, Kye},
   title        = {Flow Matching Mixture of Experts: Continuous Normalizing Flows for Sparse Expert Networks},
   year         = {2026},
