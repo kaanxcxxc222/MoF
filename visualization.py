@@ -1,11 +1,15 @@
-from mof.main import FlowMatchingMoE, FlowMatchingMoEConfig
-import torch
-import time
 import json
-from typing import Dict, List, Optional, Any
-from dataclasses import dataclass, asdict
+import time
+from dataclasses import asdict, dataclass
 from datetime import datetime
+from typing import Any, Dict, List, Optional
 
+import torch
+
+from mixture_of_flows.main import (
+    FlowMatchingMoE,
+    FlowMatchingMoEConfig,
+)
 
 # =============================================================================
 # METRICS AND EVALUATION DATA STRUCTURES
@@ -1285,8 +1289,8 @@ def visualize_flow_matching_moe(
     """
     try:
         import matplotlib.pyplot as plt
-        from matplotlib.patches import FancyBboxPatch
         import numpy as np
+        from matplotlib.patches import FancyBboxPatch
     except ImportError:
         print(
             "Matplotlib is required for visualization. Install with: pip install matplotlib"

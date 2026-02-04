@@ -1,19 +1,3 @@
-"""
-WikiText-103 Perplexity Benchmark for Flow Matching MoE
-
-Compares three architectures:
-1. Dense Transformer (MLP FFN)
-2. Standard MoE (MLP experts with top-k routing)
-3. FM-MoE (Flow Matching experts with top-k routing)
-
-Usage:
-    python benchmarks/wikitext103_benchmark.py --model fm_moe --epochs 10
-    python benchmarks/wikitext103_benchmark.py --model all --epochs 5 --quick
-
-Author: MoF Research
-Date: 2026-02-04
-"""
-
 import argparse
 import json
 import math
@@ -33,7 +17,7 @@ from torch.utils.data import DataLoader, Dataset
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from mof.main import FlowMatchingMoE, FlowMatchingMoEConfig
+from mixture_of_flows.main import FlowMatchingMoE, FlowMatchingMoEConfig
 
 
 # =============================================================================
