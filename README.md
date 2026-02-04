@@ -25,7 +25,7 @@ pip install mixture-of-flows
 
 ```python
 import torch
-from mof import FlowMatchingMoE, FlowMatchingMoEConfig
+from mixture_of_flows import FlowMatchingMoE, FlowMatchingMoEConfig
 
 # Define configuration
 config = FlowMatchingMoEConfig(
@@ -264,7 +264,7 @@ PE(t, 2i+1) = cos(t / 10000^(2i/d))
 ```python
 import torch
 import torch.nn as nn
-from mof import FlowMatchingMoE, FlowMatchingMoEConfig
+from mixture_of_flows import FlowMatchingMoE, FlowMatchingMoEConfig
 
 class TransformerBlockWithFMMoE(nn.Module):
     """Transformer block using FM-MoE instead of standard FFN."""
@@ -312,7 +312,7 @@ print(f"Balance score: {stats['balance_score']:.4f}")  # 1.0 = perfect balance
 ### Visualization
 
 ```python
-from mof.main import visualize_flow_matching_moe
+from mixture_of_flows.main import visualize_flow_matching_moe
 
 # Generate comprehensive visualization
 visualize_flow_matching_moe(

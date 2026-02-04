@@ -5,7 +5,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "mixture-of-flows"
-version = "0.1.0"
+version = "0.2.0"
 description = "Flow Matching Mixture of Experts (FM-MoE)"
 license = "MIT"
 authors = ["Kye Gomez <kye@swarms.world>"]

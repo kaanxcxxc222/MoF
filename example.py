@@ -1,6 +1,9 @@
 import torch
 
-from mof.main import FlowMatchingMoE, FlowMatchingMoEConfig
+from mixture_of_flows.main import (
+    FlowMatchingMoE,
+    FlowMatchingMoEConfig,
+)
 
 # ============================================================================
 # Example Usage and Testing
